@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    </style>
+    <body>
+        <p>Rock paper Scissors</p>
+        <button id="rock" onclick="
+        var randnum=Math.floor(Math.random()*3)
+         if(randnum==0){
+            alert('you chose rock and computer chose rock.Both ties!')
+         }
+         else if(randnum==1){
+            alert('you chose rock and computer chose paper.computer wins!')
+         }
+         else{
+            alert('you chose rock and computer chose scissors.you win!')
+         }">Rock</button>
+        <button id="paper" onclick="      
+        var randnum=Math.floor(Math.random()*3)
+        if(randnum==0){
+           alert('you chose paper and computer chose rock.You win!')
+        }
+        else if(randnum==1){
+           alert('you chose paper and computer chose paper.Both ties!')
+        }
+        else{
+           alert('you chose paper and computer chose scissors.computer wins!')
+        }">Paper</button>
+        <button id="scissors" onclick="
+                var randnum=Math.floor(Math.random()*3)
+         if(randnum==0){
+            alert('you chose scissors and computer chose rock.computer wins!')
+         }
+         else if(randnum==1){
+            alert('you chose scissors and computer chose paper.you win!')
+         }
+         else{
+            alert('you chose scissors and computer chose scissors.Both ties!')
+         }">Scissors</button>
+    </body>
+    <script>
+      
+    </script>
+</html>

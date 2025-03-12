@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gaming Button</title>
+        <style>
+           .gaming{
+            background-color: black;
+            border:none;
+            color:white;
+            padding:10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: Arial;
+            cursor:pointer;
+            margin-right: 10px;
+        }
+        .is-clicked{
+            background-color: rgb(230,230,230);
+            color:black;
+        }
+        </style>
+    </head>
+    <body>
+        <button class="gaming js-button-01" onclick="update1()">Gaming</button>
+        <button class="gaming js-button-02" onclick="update2()">music</button>
+        <button class="gaming js-button-03" onclick="update3()">Tech</button>
+        <script>
+           function update1(){
+              const but=document.querySelector('.js-button-01');
+              if(!but.classList.contains('is-clicked')){
+                but.classList.add('is-clicked');
+              }
+              else{
+                but.classList.remove('is-clicked');
+              }
+           }
+           function update2(){
+              const but=document.querySelector('.js-button-02');
+              if(!but.classList.contains('is-clicked')){
+                but.classList.add('is-clicked');
+              }
+              else{
+                but.classList.remove('is-clicked');
+              }
+           }
+           function update3(){
+              const but=document.querySelector('.js-button-03');
+              if(!but.classList.contains('is-clicked')){
+                but.classList.add('is-clicked');
+              }
+              else{
+                but.classList.remove('is-clicked');
+              }
+           }
+        </script>
+    </body>
+</html>

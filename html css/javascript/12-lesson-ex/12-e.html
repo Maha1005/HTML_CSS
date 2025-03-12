@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>App</title>
+    </head>
+    <body>
+        <button onclick="add()">Add</button>
+        <button onclick="remove()">Remove</button>
+        <script>
+            let noofmessage=2;
+            function add(){
+               noofmessage+=1;
+               document.title=`(${noofmessage}) New Message`
+            }
+            function remove(){
+                if(noofmessage>=1){
+                noofmessage-=1;
+                document.title=`(${noofmessage}) New Message`;
+                }
+            
+            }
+        setInterval(function() {
+        if (document.title === 'App' && noofmessage>0) {
+          document.title = `(${noofmessage}) New messages`;
+        } else {
+          document.title = 'App';
+        }
+      }, 1000);
+    
+        </script>
+    </body>
+</html>

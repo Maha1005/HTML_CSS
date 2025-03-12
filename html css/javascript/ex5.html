@@ -1,0 +1,11 @@
+
+<button onclick="actions()">click</button>
+<div id="one"></div>
+<script>
+    function actions(){
+        var box=document.getElementById("one")
+        var listitem=document.createElement("h1")
+        listitem.textContent="Hello"
+        box.append(listitem)
+    }
+</script>

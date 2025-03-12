@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <button class="start" onclick="change()">Start</button>
+        <button onclick="add()">Add to cart</button>
+        <p class="addCart"></p>
+        <script>
+          function change(){
+            setTimeout(function(){
+                document.querySelector('.start').innerHTML='Finished';
+            },1000);
+            document.querySelector('.start').innerHTML='Loading...';
+          }
+          function add(){
+            let isclicked=false;
+            let funcId;
+            if(!isclicked){
+            document.querySelector('.addCart').innerHTML='Added';
+            setTimeout(function(){
+                document.querySelector('.addCart').innerHTML='';
+            },2000);
+            isclicked=true;
+        }
+        else{
+
+        }
+
+          }
+        </script>
+    </body>
+</html>

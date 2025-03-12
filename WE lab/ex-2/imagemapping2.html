@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Mapping</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        body div{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            background-color:pink;
+
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            border: solid;
+            border-radius: 20px;
+            border-color: brown;
+            padding:20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <p style="background-color: darkcyan;
+    font-size: 35px; border:solid;border-color: brown;text-align: center;">IMAGE MAPPING WITH CARDS</p>
+    <div>
+    <img src="cards.jpeg" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="_blank" alt="heart" title="heart" href="heart.png" coords="155,80,12" shape="circle">
+        <area target="_blank" alt="heart" title="heart" href="heart.png" coords="183,148,34" shape="circle">
+        <area target="_blank" alt="heart" title="heart" href="heart.png" coords="208,221,12" shape="circle">
+        <area target="_blank" alt="spade" title="spade" href="spade.png" coords="104,85,13" shape="circle">
+        <area target="_blank" alt="diamond" title="diamond" href="diamond.png" coords="62,99,13" shape="circle">
+        <area target="_blank" alt="clover" title="clover" href="clover.png" coords="36,115,12" shape="circle">
+        <area target="_blank" alt="A" title="A" href="A.png" coords="27,95,11" shape="circle">
+        <area target="_blank" alt="A" title="A" href="A.png" coords="61,77,11" shape="circle">
+        <area target="_blank" alt="A" title="A" href="A.png" coords="106,63,11" shape="circle">
+        <area target="_blank" alt="A" title="A" href="A.png" coords="162,60,11" shape="circle">
+        <area target="_blank" alt="A" title="A" href="A.png" coords="199,238,12" shape="circle">
+        <area target="_blank" alt="ace" title="ace" href="heartace.html" coords="203,101,28" shape="circle">
+        <area target="_blank" alt="ace" title="ace" href="spadeshape.html" coords="105,123,16" shape="circle">
+        <area target="_blank" alt="ace" title="ace" href="diamondshape.html" coords="75,127,13" shape="circle">
+        <area target="_blank" alt="ace" title="ace" href="clovershaped.html" coords="48,141,11" shape="circle">
+    </map>
+</div>
+</body>
+</html>

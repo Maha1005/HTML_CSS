@@ -1,0 +1,10 @@
+<div id="one"></div>
+<button id="first" onclick="john(event)">John</button>
+<button id="two" onclick="john(event)">Maha</button>
+<button id="three" onclick="john(event)">Madhu</button>
+<script>
+    var div=document.getElementById("one")
+    function john(event){
+        div.textContent=event.target.textContent
+    }
+</script>

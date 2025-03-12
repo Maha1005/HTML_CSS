@@ -1,0 +1,27 @@
+<input id="guess">
+<button onclick="guessing()">Guess</button>
+<p id="content">Guess the number</p>
+<p id="score">Score:10</p>
+<script>
+    var scores=10
+    function guessing(){
+        var guessnum=document.getElementById("guess")
+        var content=document.getElementById("content")
+        var scoreval=document.getElementById("score")
+        var guessed=Number(guessnum.value)
+        
+        var comguess=Math.floor(Math.random()*10)
+        console.log(comguess)
+        if(guessed==comguess){
+              content.textContent="Congrats!Correct guess...."
+              alert("You won...!")
+        }
+        else{
+            content.textContent="Oops!Wrong....Try again"
+            scores=scores-1
+            scoreval.textContent="Score:"+scores
+        }
+       
+}
+</script>
+

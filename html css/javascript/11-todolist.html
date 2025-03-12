@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <style>
+            *{
+                font-family: Arial;
+            }
+           .to-do-grid{
+            display: grid;
+            grid-template-columns: 200px 150px 100px;
+            padding:9px;
+            row-gap: 10px;
+           }
+           .inputbox{
+            padding:9px;
+           }
+           .delete-button{
+            padding:9px;
+            background-color: brown;
+            border:none;
+            color: white;
+            font-size: 14px;
+           }
+           .add-button{
+            background-color: rgb(11, 150, 11);
+            border:none;
+            color:white;
+            font-size: 14px;
+           }
+        </style>
+    </head>
+    <body>
+        <p>Todo List</p>
+        <div class="to-do-grid">
+        <div>
+        <input class="js-inputbox inputbox" placeholder="Todo name">
+        </div>
+        <div>
+        <input type="date" class="js-datebox inputbox">
+        </div>
+       
+        <button onclick="addTodo()" class="add-button">Add</button>
+        </div>
+        <div class="js-container to-do-grid"></div>
+        <script src="scripts\todolist-script.js">
+          
+        </script>
+    </body>
+</html>

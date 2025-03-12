@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            let count=0;
+            let removeEgg=(nums,elem)=>{
+               newarr=nums.filter((num)=>{
+                if(num===elem && count<2){
+                    count++;
+                    return false;
+                }
+            else{
+                return true;
+            }});
+               console.log(newarr);
+            }
+         removeEgg(['egg','cake','pizza','egg','egg'],'egg');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        .outer-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(118, 219, 239, 0.763);
+            height: 604px;
+            width: 1300px;
+            border: solid;
+            border-width: 28px;
+        }
+
+        .inner-div {
+            height: 470px;
+            width: 280px;
+            background-color: rgba(247, 155, 186, 0.78);
+            display: flex;
+            border-radius: 15px;
+            border: solid;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .buttons {
+            height: 60px;
+            width: 60px;
+            border: none;
+            border-radius: 100%;
+            background-color: rgba(118, 219, 239, 0.763);
+            border: solid;
+            border-color: rgb(32, 125, 168);
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-div">
+        <div class="inner-div">
+            <p class="result"
+                style="font-size: 30px; width:240px;background:white; height:70px;border:solid;border-radius: 10px; text-align: center;">
+            </p>
+            <div class="row-1">
+                <button class="buttons" onclick="update('1')">1</button>
+                <button class="buttons" onclick="update('2')">2</button>
+                <button class="buttons" onclick="update('3')">3</button>
+                <button class="buttons" onclick="updateop('+')">+</button>
+            </div>
+            <div class="row-2">
+                <button class="buttons" onclick="update('4')">4</button>
+                <button class="buttons" onclick="update('5')">5</button>
+                <button class="buttons" onclick="update('6')">6</button>
+                <button class="buttons" onclick="updateop('-')">-</button>
+            </div>
+            <div class="row-3">
+                <button class="buttons" onclick="update('7')">7</button>
+                <button class="buttons" onclick="update('8')">8</button>
+                <button class="buttons" onclick="update('9')">9</button>
+                <button class="buttons" onclick="updateop('*')">*</button>
+            </div>
+            <div class="row-4">
+                <button class="buttons" onclick="updateop('/')">/</button>
+                <button class="buttons" onclick="update('0')">0</button>
+                <button class="buttons" onclick="update('.')">.</button>
+                <button class="buttons" onclick="calculate()">=</button>
+            </div>
+            <div class="row-5">
+                <button style="width:200px;height:50px;  background-color: rgba(118, 219, 239, 0.763);
+            border: solid;
+            border-color: rgb(32, 125, 168);
+            font-size: 20px;
+            border-radius: 15px;" onclick="cancel()">cancel</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="calculatorscript.js"></script>
+</body>
+
+</html>

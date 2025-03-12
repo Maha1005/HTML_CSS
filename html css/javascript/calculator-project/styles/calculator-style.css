@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+}
+.number-buttons{
+    background-color: rgb(51, 51, 51);
+    border:none;
+    height:60px;
+    width:60px;
+    color:white;
+    font-family: Arial;
+    font-size:27px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.symbol-buttons{
+    background-color: rgb(254, 160, 10);
+    border:none;
+    height:60px;
+    width:60px;
+    color:white;
+    font-family: Arial;
+    font-size: 27px;
+    border-radius: 50%;
+}
+.calculation-content{
+    font-size:45px;
+    color:white;
+    font-family: Arial;
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+.clear-button{
+    background-color: rgb(51, 51, 51);
+    border:none;
+    height:60px;
+    width:60px;
+    color:white;
+    font-family: Arial;
+    font-size:18px;
+    border-radius: 50%;
+    margin-right: 10px;
+}

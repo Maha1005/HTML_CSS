@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GCT
+        </title>
+        <style>
+            *{
+                padding:0px;
+                margin:0px;
+            }
+            .container{
+                  background-color:rgb(2,2,83);
+                  display: flex;
+                  flex-wrap: wrap;
+                  margin-left: 35px;
+                  margin-right: 35px;
+            }
+            .options{
+                color:rgb(2,2,83);
+                display: flex;
+                gap:15px;
+                padding-top: 20px;
+                padding-left:50px ;
+                font-weight: bold;
+                font-size: 17px;
+                }
+            a{
+                color:white;
+                text-decoration: none;
+            }
+            .selection-box{
+                width:150px;
+                height:40px;
+                margin-top: 10px;
+                margin-left: 110px;
+            }
+            .menu{
+                margin-left: 150px;
+                
+            }
+            .menu-box{
+                background-color: rgb(238, 238, 8);
+                display: flex;
+                justify-content: space-between;
+                font-size:17px;
+                margin-right: 35px;
+                margin-left:35px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 3px;
+                padding-left: 70px;
+                padding-right:70px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-weight: bold;
+                flex-wrap: wrap;
+                cursor: pointer;
+
+                position:relative;
+            }
+            .option {
+                display: none;
+                position: absolute;
+                background: yellow;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                list-style: none;
+                padding: 10px;
+                
+}
+.option a{
+    color:black;
+    font-size: 20px;    
+    font-weight: 100px;
+}
+.menu-box div:hover .option {
+    display: block;
+}
+
+  .first-half{
+    background-color: rgb(2,2,83);
+  }
+  .second-half{
+    background-color:rgb(238, 238, 8);
+    display: flex;
+  }
+  .link-box{
+    height:250px;
+    width:300px;
+    margin-right: 35px;
+    margin-left:35px;
+    background-color:rgb(2,2,83) ;
+  }
+  .link-box a{
+       text-decoration: underline;
+       font-weight: bold;
+
+  }
+  .one-half{
+    display:flex;
+    flex-direction: column;
+  }
+  .link-box-2{
+        width:274px;
+        height:20px;
+        margin-right:32px;
+        margin-left:35px;
+        text-align:center;
+        padding: 10px;
+        border: solid;
+        border-color: rgb(5, 5, 117);
+        font-weight:bold;
+  }
+        </style>
+    </head>
+    <body>
+        <div class="first-half">
+        <div class="container">
+            <img src="logo.png" class="gct-logo">
+            <div class="menu">
+            <ul class="options">
+                <li> <a href="about.html">MY GCT</a></li>
+                <li> <a href="contact.html">Access GCT E-Mail</a></li>
+                <li> <a href="home.html">Alumni</a></li>
+                <li>  <a href="left.html">Contact</a></li>
+            </ul>
+           <select class="selection-box">
+            <option value="Normal">Normal</option>
+            <option value="High Contrast">High contrast</option>
+           </select>
+           <button style="width:40px;
+           height:40px">A+</button>
+           <button style="width:40px;
+           height:40px">A</button>
+           <button style="width:40px;
+           height:40px">A-</button>
+            </div>
+            <marquee style="color:yellow;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;" scrollamount="10">This institute is accredited by NAAC - A Grade with a score of 3.06 for the five years  |</marquee>
+        </div>
+        <div class="menu-box">
+            <div class="Home">Home
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>Administration
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>Acadamics
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>centres/facilities
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>research
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>NISP
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>TEQIP
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>COE
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>IQAC
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>NBA
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>AICTE
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>FEES
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>AISHE
+                <ul class="option">
+                    <li><a href="about.html">MY GCT</a></li>
+                    <li><a href="contact.html">Access GCT E-Mail</a></li>
+                    <li><a href="home.html">Alumni</a></li>
+                    <li><a href="left.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <div class="second-half">
+        <div class="one-half">
+          <div class="link-box">
+            <p style="color:rgb(238, 238, 8);text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">NEWS AND EVENTS</p>
+            <marquee direction="up" height="230px" scrollamount="7">
+                <p><a href="about.html">Theory time table out now..</a></p>
+                <p style="color:white;">••••••••••••••••••••••••••••••••••••••••••••••••</p>
+                <p><a href="about.html">IT Time table</a></p>
+                <p style="color:white">•••••••••••••••••••••••••••••••••••••••••••••••</p>
+                <p><a href="about.html">BC MBC Renewal</a></p>
+                <p style="color:white">••••••••••••••••••••••••••••••••••••••••••••••••</p>
+                <p><a href="about.html">Pragathi Renewal</a></p>
+                <p style="color:white">••••••••••••••••••••••••••••••••••••••••••••••••</p>
+                <p><a href="about.html">Staff Details</a></p>
+                <p style="color:white">••••••••••••••••••••••••••••••••••••••••••••••••</p>
+                <p><a href="about.html">Department Details</a></p>
+                <p style="color:white">••••••••••••••••••••••••••••••••••••••••••••••••</p>
+             </marquee>
+             </div>
+             <div class="link-box-2">
+                <p>TN MBA COUNSELLING</p>
+             </div>
+             <div class="link-box-2">
+                <p>STUDENT VERIFICATION</p>
+             </div>
+            </div>
+             <div class="two-half">
+                <img src="GCT IMAGE.jpg"> 
+             </div>
+      </div>
+    
+    </body>
+    
+</html>
